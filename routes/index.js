@@ -30,7 +30,7 @@ async function callHomeScreen(){
 
     }]);
 
-console.log(homeScreenQ.qList);
+//console.log(homeScreenQ.qList);
 
 let actionChosen = homeScreenQ.qList;
 
@@ -55,30 +55,36 @@ if (actionChosen === "Quit"){
     let s = viewRouter.viewDept();
     s.then((result) =>{
         console.table(result);
+        callHomeScreen();
     }).catch((result) =>{
         console.error(result.message);
+        callHomeScreen();
     });
-    callHomeScreen();
+    
 }else if(actionChosen === "View All Roles"){
     console.log("You selected view all Roles");
    let s =  viewRouter.viewRoles();
    s.then((result) =>{
        console.table(result);
+       callHomeScreen();
    }).catch((result)=>{
     console.error(result.message);
+    callHomeScreen();
    })
     
-    callHomeScreen();
+   
 }else if(actionChosen === "View All Employees"){
     console.log("You selected to view all Employees");
     let s = viewRouter.viewEmp();
 s.then((result)=>{
     console.table(result);
+    callHomeScreen();
 }).catch((result) =>{
     console.error(result.message);
+    callHomeScreen();
 });
 
-callHomeScreen();
+
 }else if(actionChosen === "Add Role"){
     console.log("You selected add a new Role");
     var selectDept ="";
@@ -91,7 +97,7 @@ callHomeScreen();
                     let finalCall = addRouter.addNewRole(result[0],result[1],result[2]);
                     finalCall.then((result)=>{
 
-                        console.log(result.affectedRows);
+                        console.log("New Role is successfully added");
                         callHomeScreen();
                     }).catch((result) =>{
                         console.log(result.message);
