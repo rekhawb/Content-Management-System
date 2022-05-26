@@ -43,4 +43,8 @@
 ![Test Image 3](./images/Capture10.PNG)
 ![Test Image 3](./images/Capture11.PNG)
 
+#### Video walkthrough links:
+#### 1. https://drive.google.com/file/d/1BfZj_dRPfqjuZ03zhe_pQaWUV_2NJoai/view
+#### 2. https://drive.google.com/file/d/1SzfWHnR2o911jCYxtzwnyB4J1Y0VaF76/view
+
 ###### last README update on 05/26/2022
