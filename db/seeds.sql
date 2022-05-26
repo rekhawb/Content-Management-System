@@ -1,8 +1,8 @@
 /*INSERT INTO DEPARTMENT (DEPT_NAME) 
 VALUES("Sales"),
 ("Operations"),
-("Engineering");
-*/
+("Engineering");*/
+
 
 /*INSERT INTO EMP_ROLE (DEPT_ID,TITLE,SALARY)
 VALUES (1000,'Sales Manager',105000),

@@ -119,6 +119,7 @@ inquirer.prompt([
             console.error("Error:"+err.message);
         }
         console.log("Record updated");
+        process.exit(0);
     }));
 
       
