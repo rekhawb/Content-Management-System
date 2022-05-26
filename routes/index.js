@@ -185,6 +185,7 @@ else if(actionChosen === "Add Employee"){
 }else if(actionChosen === "Update Employee Role"){
     console.log("You selected to update Employee Role");
     updateRouter.uptNewEmp();
+    callHomeScreen();
 }
 
 else if(actionChosen === "View Employees by Manager"){
